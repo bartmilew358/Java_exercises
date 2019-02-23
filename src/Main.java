@@ -1,4 +1,4 @@
-package src;/*
+/*
 * to taki pierwszy program
 */
 
@@ -24,14 +24,16 @@ public class Main {
         System.out.println("8");
         System.out.println("8");
         System.out.println("8");
-        System.out.println("8");
+        System.out.printlndeewerewtrr("8");
         */
 
 
         int x;
         x = 100;
 
-        int y = 8;
+        final int y = 8;
+
+
         double d = 5.6;
 
         char c = 'a';
@@ -44,6 +46,10 @@ public class Main {
 
         boolean b = true;
         boolean b1 = false;
+
+
+
+
 
 
     }
