@@ -4,17 +4,18 @@ Napisz program, który dla podanej liczby wypisze na ekran konsoli dzień tygodn
 Dodatkowo wyświetl ile dni zostało do weekendu, dla poniedziałku - 5 dni, wtorku - 4 itp.
  */
 
+import java.util.Scanner;
+
 public class Zadanie5 {
     public static void main(String[] args) {
 
-    dzien_tygodnia(1);
-    dzien_tygodnia(2);
-    dzien_tygodnia(3);
-    dzien_tygodnia(4);
-    dzien_tygodnia(5);
-    dzien_tygodnia(6);
-    dzien_tygodnia(7);
-    dzien_tygodnia(8);
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Podaj numer dnia tygodnia");
+        int x = scan.nextInt();
+
+    dzien_tygodnia(x);
+
 
     }
 
