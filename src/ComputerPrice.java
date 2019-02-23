@@ -24,9 +24,6 @@ public class ComputerPrice {
         System.out.println("Karta graficzna = " + karta_graficzna + " zł + VAT = " + karta_graficzna*.23 + " zł" + " Razem = " + karta_graficzna*1.23 + " zł");
         System.out.println("Ram = " + ram + " zł + VAT = " + ram*.23 + " zł" + " Razem = " + ram*1.23 + " zł");
         System.out.println("Suma = " + suma + " zł + VAT = " + suma*.23 + " zł" + " Razem = " + suma*1.23 + " zł");
-        System.out.println("HUJ");
-
-
 
     }
 
