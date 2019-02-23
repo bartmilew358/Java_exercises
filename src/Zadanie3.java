@@ -6,9 +6,9 @@ Czyli np. dla 'I' wypisze 1, dla 'V' 5 itp. Obsłuż przypadek gdy podana liczba
 public class Zadanie3 {
     public static void main(String[] args) {
 
-        String a = "X";
+        String a = "IX";
 
-        System.out.println("Liczba rzymska " + a + " to arabskie:");
+        System.out.println("Cyfra rzymska " + a + " to arabskie:");
 
         switch (a) {
             case "I": System.out.println("1");break;
@@ -20,7 +20,7 @@ public class Zadanie3 {
             case "VII": System.out.println("7");break;
             case "VIII": System.out.println("8");break;
             case "IX": System.out.println("9");break;
-            case "X": System.out.println("10");break;
+
 
             default: {
                 System.out.println("Liczba z poza zakresu.");
