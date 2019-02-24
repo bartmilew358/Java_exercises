@@ -26,7 +26,7 @@ public class Zadanie5 {
             case 2: System.out.println("Wtorek. De weekendu 4 dni.");break;
             case 3: System.out.println("Sroda. De weekendu 3 dni.");break;
             case 4: System.out.println("Czwartek. De weekendu 2 dni.");break;
-            case 5: System.out.println("Piątek. De weekendu 1 dni.");break;
+            case 5: System.out.println("Piątek. De weekendu 1 dzień.");break;
             case 6: System.out.println("Sobota. Jeste weekend!");break;
             case 7: System.out.println("Niedziela. Jutro poniedziałek :(");break;
 
