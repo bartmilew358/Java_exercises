@@ -12,10 +12,17 @@ public class converterToCelsiusApp {
         double z;
         double d=Double.parseDouble(y);
 
+        if (d < -459.67) {
+            System.out.println("Temperatura poniżej zera absolutnego.");
 
-        convertToCelsius temperatura = new convertToCelsius();
+        }
 
-        z = temperatura.konwerter(15);
-            System.out.println("Temperatura w stopniach C:" + temperatura.konwerter(212));
+        else {
+
+            convertToCelsius temperatura = new convertToCelsius();
+
+            System.out.println("Temperatura w stopniach C:" + temperatura.konwerter(d));
+
+        }
     }
 }
