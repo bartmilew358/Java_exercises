@@ -3,8 +3,9 @@
 public class Task2 {
     public static void main(String[] args) {
 
-        int a = 8;
-        int b = a*a*a;
+        double a = 8;
+        double potega = Math.PI;
+        double b = Math.pow(a,potega);
 
 
         System.out.println("a = " + a);
