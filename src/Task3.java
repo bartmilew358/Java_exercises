@@ -1,4 +1,5 @@
-//Napisz program, który utworzy jedną zmienną, a następnie wypisze na ekran tekst: true jeżeli wartość tej zmiennej jest liczbą parzystą lub false w przeciwnym przypadku.
+//Napisz program, który utworzy jedną zmienną, a następnie wypisze na ekran tekst:
+// true jeżeli wartość tej zmiennej jest liczbą parzystą lub false w przeciwnym przypadku.
 
 public class Task3 {
     public static void main(String[] args) {
@@ -18,11 +19,6 @@ public class Task3 {
         System.out.println("Is even " + isEven);
 
         System.out.println("parzysta: " + (x%2 ==0));
-
-
-
-
-
 
     }
 }
