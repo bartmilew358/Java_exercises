@@ -8,7 +8,7 @@ public class Zadanie1 {
 
     public static void main(String[] args) {
 
-        int a = 10;
+        int a;
 
         checkNumber(-10);
         checkNumber(-0);

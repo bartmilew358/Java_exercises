@@ -10,7 +10,6 @@ public class TriangleApp {
             System.out.println("Prostokątny");
         else System.out.println("Nawet nie wiem czy to trójkąt.");
 
-// okoń test test pusza
         //trojkat.isRectangular(5,4,3);
 
         //System.out.println(trojkat.isRectangular(5,4,9));
