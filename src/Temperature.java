@@ -8,11 +8,11 @@ która będzie zwracała napis w postaci: {date} {hour} - {temperature} °C, np:
 
 public class Temperature {
 
-    double temperature;
-    String date;
-    String hour;
+    private double temperature;
+    private String date;
+    private String hour;
 
-    public Temperature(){}
+//    public Temperature(){}
     public Temperature (double temperature, String date, String hour) {
         this.temperature = temperature;
         this.date = date;
@@ -57,14 +57,13 @@ public class Temperature {
 
     public static void main(String[] args) {
 
-        Temperature showTemperature = new Temperature();
+        Temperature showTemperature = new Temperature(15, "29-02-2019", "30:72");
 
-        showTemperature.setDate("29-02-2019");
-        showTemperature.setHour("18:81");
-        showTemperature.setTemperature(15);
+//        showTemperature.setDate("29-02-2019");
+//        showTemperature.setHour("18:81");
+//        showTemperature.setTemperature(15);
 
         System.out.println(showTemperature.show());
         System.out.println(showTemperature.showInFahrenheit());
-
     }
 }
