@@ -9,7 +9,6 @@ public class converterToCelsiusApp {
         System.out.println("Podaj temperature w F:");
         String y = scan.nextLine();
 
-        double z;
         double d=Double.parseDouble(y);
 
         if (d < -459.67) {

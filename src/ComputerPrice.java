@@ -32,27 +32,56 @@ cenę komputera i monitora. W cenie należy uwzględnić podatek VAT = 23%.
 
 public class ComputerPrice {
 
+        double vatTax;
+        double mainBoard;
+        double computerCase;
+        double processor;
+        double powerSupply;
+        double graficCard;
+        double ramMemory;
+        double monitor;
 
-        private double plyta_glowna = 450;
-        private double obudowa = 550;
-        private double procesor = 1250;
-        private double zasilacz = 350;
-        private double karta_graficzna = 1750;
-        private double ram = 500;
-        private double monitor = 999;
+        public ComputerPrice(
+                double vatTax,
+                double mainBoard,
+                double computerCase,
+                double processor,
+                double powerSupply,
+                double graficCard,
+                double ramMemory,
+                double monitor) {
+
+                this.vatTax = vatTax;
+                this.mainBoard = mainBoard;
+                this.computerCase = computerCase;
+                this.processor = processor;
+                this.powerSupply = powerSupply;
+                this.graficCard = graficCard;
+                this.ramMemory = ramMemory;
+                this.monitor = monitor;
+        }
 
         public double getComputerPrice () {
-            return (plyta_glowna+obudowa+procesor+zasilacz+karta_graficzna+ram);
+                return (this.mainBoard + this.computerCase + this.processor + this.powerSupply + this.graficCard + this.ramMemory);
+        }
 
+        public double getComputerPriceWithTax () {
+                return (this.mainBoard + this.computerCase + this.processor + this.powerSupply + this.graficCard + this.ramMemory) * this.vatTax;
         }
 
         public double getMonitorPrice () {
-            return(monitor);
+                return (this.monitor);
+        }
+
+        public double getMonitorPriceWithTax () {
+                return (this.monitor) * this.vatTax;
         }
 
         public double getComputerAndMonitorPrice() {
-            return (monitor+plyta_glowna+obudowa+procesor+zasilacz+karta_graficzna+ram);
+                return  getComputerPrice() + getMonitorPrice();
         }
 
-
+        public double getComputerAndMonitorPriceWithTax() {
+                return  getComputerPriceWithTax() + getMonitorPriceWithTax();
+        }
 }
