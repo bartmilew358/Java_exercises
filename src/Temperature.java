@@ -12,18 +12,8 @@ public class Temperature {
     String date;
     String hour;
 
-
-    //constructor
-
-//    public Temperature(double temperature, String date, String hour) {
-//        this.temperature = temperature;
-//        this.date = date;
-//        this.hour = hour;
-//    }
-
-
-    public Temperature(){};
-    public Temperature(double temperature, String date, String hour) {
+    public Temperature(){}
+    public Temperature (double temperature, String date, String hour) {
         this.temperature = temperature;
         this.date = date;
         this.hour = hour;
