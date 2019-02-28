@@ -10,7 +10,7 @@ public class ComputerPriceApp {
 
         ComputerPrice priceC1 = new ComputerPrice(1.23,300,350,500, 100, 1000, 600, 800);
 
-        System.out.println("VAT rate = " + (((priceC1.vatTax))-1)*100 + " %");
+        System.out.println("VAT rate = " + (((priceC1.vatTax))-1)*100 + " %"); // writing the VAT rate
         System.out.println("Computer Price w/o TAX = " + priceC1.getComputerPrice());
         System.out.println("Computer Price with TAX = " + priceC1.getComputerPrice());
         System.out.println("Monitor Price w/o TAX = " + priceC1.getMonitorPrice());
