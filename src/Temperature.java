@@ -54,12 +54,13 @@ public class Temperature {
     }
 
     public String show (){
+
         return getDate() + " " + getHour() + " " + getTemperature() + "°C";
     }
 
     public String showInFahrenheit(){
-        FahrenheitConverter temperatureConverter = new FahrenheitConverter();
 
+        FahrenheitConverter temperatureConverter = new FahrenheitConverter();
         return getDate() + " " + getHour() + " " + temperatureConverter.convertToFahrenheit(getTemperature()) + "°F";
     }
 
@@ -67,7 +68,6 @@ public class Temperature {
     public static void main(String[] args) {
 
         Temperature showTemperature = new Temperature();
-//        FahrenheitConverter showInFahrenheit = new FahrenheitConverter();
 
         showTemperature.setDate("29-02-2019");
         showTemperature.setHour("18:81");
