@@ -10,9 +10,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
-                '}';
+        return "Car{" + "brand='" + brand + '\'' + ", color='" + color + '\'' + '}';
     }
 }

@@ -14,7 +14,7 @@ public class Task2 {
         System.out.println("a = " + a);
         System.out.println("a^3 = " + b);
         System.out.println("a^PI = " + c);
-        System.out.println("Pierwiastek z a = " + Math.sqrt(a));
+        System.out.println("Pierwiastek z a w przybliżeniu do 0 miejsc po przecinku. = " + Math.round(Math.sqrt(a)));
 
     }
 }

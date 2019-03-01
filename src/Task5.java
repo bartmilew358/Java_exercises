@@ -4,28 +4,50 @@ public class Task5 {
     public static void main(String[] args) {
 
         char a = 65;
+        int b = a +5;
 
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+
+        while (a<=b) {
+
+            System.out.println(a);
+            a++;
+        }
+
 
         a = 1488;
+        b = a +5;
 
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
+        while (a<=b) {
+
+            System.out.println(a);
+            a++;
+        }
+
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
 
         a = 3840;
+        b = a +5;
 
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
-        System.out.println(a++);
+        while (a<=b) {
+
+            System.out.println(a);
+            a++;
+        }
+
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
+//        System.out.println(a++);
 
 
     }

@@ -12,6 +12,9 @@ public class Task4 {
         else System.out.println("false");
 
 
+        System.out.println((b==0 && c==0));
+
+
 
     }
 }
