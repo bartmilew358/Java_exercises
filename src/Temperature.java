@@ -12,8 +12,8 @@ public class Temperature {
     private String date;
     private String hour;
 
-//    public Temperature(){}
-    public Temperature (double temperature, String date, String hour) {
+    //    public Temperature(){}
+    public Temperature(double temperature, String date, String hour) {
         this.temperature = temperature;
         this.date = date;
         this.hour = hour;
@@ -43,12 +43,12 @@ public class Temperature {
         this.hour = hour;
     }
 
-    public String show (){
+    public String show() {
 
         return getDate() + " " + getHour() + " " + getTemperature() + "°C";
     }
 
-    public String showInFahrenheit(){
+    public String showInFahrenheit() {
 
         FahrenheitConverter temperatureConverter = new FahrenheitConverter();
         return getDate() + " " + getHour() + " " + temperatureConverter.convertToFahrenheit(getTemperature()) + "°F";

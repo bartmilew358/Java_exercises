@@ -26,17 +26,14 @@ public class HelloWorldFx extends Application {
         Button button2 = new Button("BUMMMM!!");
         button2.setOnAction(e -> System.out.println("BUM."));
 
-
-
         TextField field = new TextField("Dobre nie?");
-
 
         VBox box = new VBox();
         box.setAlignment(Pos.CENTER);
         box.getChildren().addAll(label, button, field, button2, label2);
 
         primaryStage.setTitle("Generator wyrazów dźwiękonaśladowczych");
-        primaryStage.setScene(new Scene(box, 300, 200));
+        primaryStage.setScene(new Scene(box, 500, 200));
         primaryStage.show();
     }
 }
