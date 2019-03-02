@@ -1,4 +1,4 @@
-//Wyświetl na ekranie pięć pierwszych liter alfabetu: łacińskiego (zaczyna się od kodu: 65), hebrajskiego (zaczyna się od: 1488) i tybetańskiego (zaczyna się od: 3840)
+package pl.sda.introtasks;//Wyświetl na ekranie pięć pierwszych liter alfabetu: łacińskiego (zaczyna się od kodu: 65), hebrajskiego (zaczyna się od: 1488) i tybetańskiego (zaczyna się od: 3840)
 
 public class Task5 {
     public static void main(String[] args) {

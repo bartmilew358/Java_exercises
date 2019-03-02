@@ -1,4 +1,4 @@
-/*
+package pl.sda.objectstask.ComputerPrice;/*
 W osobnej klasie ComputerPrice, w metodzie main() napisz program obliczający cenę komputera na podstawie jego części.
 Program ma wypisać na konsolę osobno cenę samego komputera:
 płyta główna, procesor, pamięć RAM, dysk twardy i osobno

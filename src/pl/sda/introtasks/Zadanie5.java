@@ -1,4 +1,4 @@
-/*
+package pl.sda.introtasks;/*
 Napisz program, który dla podanej liczby wypisze na ekran konsoli dzień tygodnia
 (dla 1 - "poniedziałek", 2 - "wtorek" itp).
 Dodatkowo wyświetl ile dni zostało do weekendu, dla poniedziałku - 5 dni, wtorku - 4 itp.

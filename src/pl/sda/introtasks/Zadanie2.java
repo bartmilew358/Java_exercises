@@ -1,4 +1,4 @@
-/*
+package pl.sda.introtasks;/*
 Napisz program, który wypisze na ekran konsoli, słowo oznaczające ocenę dla podanej cyfry.
 Np. dla 1 - "niedostateczny", 2 - "mierny" itp. Obsłuż przypadek gdy cyfra jest poza skalą ocen.
  */

@@ -1,4 +1,4 @@
-/*
+package pl.sda.introtasks;/*
 * to taki pierwszy program
 */
 

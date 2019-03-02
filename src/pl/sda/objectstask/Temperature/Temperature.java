@@ -1,4 +1,4 @@
-/*
+package pl.sda.objectstask.Temperature;/*
 Utwórz nową klasę Temperature, która będzie posiadała pola: double temperature, String date, String hour.
 Klasa określa temperaturę w skali Celsjusza w konkretnym dniu i o konkretnej godzinie.
 Dodaj konstruktor inicjalizujący wszystkie trzy pola, metody-gettery dla każdego pola + dodaj metodę show()

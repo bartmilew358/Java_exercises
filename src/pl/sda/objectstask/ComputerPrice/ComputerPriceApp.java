@@ -1,4 +1,4 @@
-/*
+package pl.sda.objectstask.ComputerPrice;/*
 W klasie ComputerPrice wydziel metody getComputerPrice(), getMonitorPrice() i getComputerAndMonitorPrice(),
  ostatnia z metod ma korzystać z dwóch pierwszych.
  Zmienną VAT ustaw jako pole klasy ComputerPrice.

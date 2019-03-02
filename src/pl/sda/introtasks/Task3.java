@@ -1,4 +1,4 @@
-//Napisz program, który utworzy jedną zmienną, a następnie wypisze na ekran tekst:
+package pl.sda.introtasks;//Napisz program, który utworzy jedną zmienną, a następnie wypisze na ekran tekst:
 // true jeżeli wartość tej zmiennej jest liczbą parzystą lub false w przeciwnym przypadku.
 
 public class Task3 {

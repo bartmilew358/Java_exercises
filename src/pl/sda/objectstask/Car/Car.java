@@ -1,3 +1,5 @@
+package pl.sda.objectstask.Car;
+
 public class Car {
 
     private String brand;

@@ -1,3 +1,5 @@
+package pl.sda.objectstask.Triangle;
+
 public class TriangleApp {
 
 

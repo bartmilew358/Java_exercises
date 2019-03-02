@@ -1,3 +1,5 @@
+package pl.sda.objectstask.Triangle;
+
 public class Triangle {
 
     public boolean isRectangular (int x, int y, int z){

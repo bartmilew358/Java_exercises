@@ -1,4 +1,4 @@
-/*Napisz program, który wypisze na ekran konsoli, czy dana liczba całkowita znajduje się w przedziale
+package pl.sda.introtasks;/*Napisz program, który wypisze na ekran konsoli, czy dana liczba całkowita znajduje się w przedziale
      1-10, 11-100, 101-1000, 1001-10000, czy też może jest mniejsza od 0 lub większa od 10000.
      Parametrem wejściowym niech będzie zmienna zainicjowana na początku programu.
 */

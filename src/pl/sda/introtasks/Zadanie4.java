@@ -1,4 +1,4 @@
-/*
+package pl.sda.introtasks;/*
 Napisz program, który wypisze na ekran konsoli czy podany kod Unicode jest liczbą (0-9),
 małą literą (a-z) czy też dużą literą (A-Z).
 Kody każdej z grup znaków następują po sobie więc wystarczy znaleźć kod np. dla litery 'a' i 'z'

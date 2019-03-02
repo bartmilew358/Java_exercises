@@ -1,3 +1,5 @@
+package pl.sda.objectstask.Temperature;
+
 import java.util.Scanner;
 
 public class converterToCelsiusApp {

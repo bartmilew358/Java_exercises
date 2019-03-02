@@ -1,4 +1,4 @@
-//Wyświetl na ekranie w jednej linijce znaki (char) dla kodów: 74, 65, 86, 65, 32, 8658, 32, 9786
+package pl.sda.introtasks;//Wyświetl na ekranie w jednej linijce znaki (char) dla kodów: 74, 65, 86, 65, 32, 8658, 32, 9786
 
 public class Task6 {
     public static void main(String[] args) {
