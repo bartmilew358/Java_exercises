@@ -5,6 +5,13 @@ public class ItemModel {
     private String description;
     private double price;
 
+    public ItemModel(String title, String description, double price) {
+        this.title = title;
+        this.description = description;
+        this.price = price;
+
+    }
+
     public String getTitle() {
         return title;
     }
@@ -17,9 +24,6 @@ public class ItemModel {
         return price;
     }
 
-    public ItemModel(String title, String description, double price) {
-        this.title = title;
-        this.description = description;
-        this.price = price;
-    }
+
+
 }
