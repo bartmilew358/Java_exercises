@@ -13,8 +13,5 @@ public class OnlineShop {
         System.out.println(user1.getFirstName() + " " + user1.getLastName() + " " + user1.getAge());
 
 
-
-
-        // TODO
     }
 }
