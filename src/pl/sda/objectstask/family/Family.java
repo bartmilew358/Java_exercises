@@ -2,10 +2,10 @@ package pl.sda.objectstask.family;
 
 public class Family {
 
-    Person husband;
-    Person wife;
-    Person child;
-    String name;
+    private Person husband;
+    private Person wife;
+    private Person child;
+    private String name;
 
     public Family(Person husband, Person wife, Person child, String name) {
         this.husband = husband;

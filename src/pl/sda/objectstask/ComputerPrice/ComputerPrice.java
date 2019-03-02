@@ -32,14 +32,14 @@ cenę komputera i monitora. W cenie należy uwzględnić podatek VAT = 23%.
 
 public class ComputerPrice {
 
-        double vatTax;
-        double mainBoard;
-        double computerCase;
-        double processor;
-        double powerSupply;
-        double graficCard;
-        double ramMemory;
-        double monitor;
+        protected double vatTax;
+        private double mainBoard;
+        private double computerCase;
+        private double processor;
+        private double powerSupply;
+        private double graficCard;
+        private double ramMemory;
+        private double monitor;
 
         public ComputerPrice(
                 double vatTax,
