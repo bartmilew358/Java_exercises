@@ -25,8 +25,6 @@ public class Stringtask {
 
     }
 
-
-
     public static String turnText (String text) {
 
         return new StringBuilder().append("Simon says: ").append(text).toString();
@@ -50,5 +48,4 @@ public class Stringtask {
         return (text1.substring((text1.length()-3), text1.length()).equals((text2.substring((text2.length()-3), text2.length()))));
 
     }
-
 }
