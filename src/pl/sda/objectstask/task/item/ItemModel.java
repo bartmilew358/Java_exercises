@@ -1,19 +1,25 @@
 package pl.sda.objectstask.task.item;
 
 public class ItemModel {
-    public String title;
-    protected String description;
+    private String title;
+    private String description;
     private double price;
 
-    private String getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    private String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    private double getPrice() {
+    public double getPrice() {
         return price;
+    }
+
+    public ItemModel(String title, String description, double price) {
+        this.title = title;
+        this.description = description;
+        this.price = price;
     }
 }

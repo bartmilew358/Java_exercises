@@ -1,13 +1,14 @@
 package pl.sda.objectstask.task.user;
 
 public class UserManager {
-    public UserModel user;
+    private UserModel user;
 
     private void createUser(String firstName, String lastName, int age) {
-        user = new UserModel();
+
+        user = new UserModel(firstName, lastName,age);
     }
 
-    protected UserModel getUser() {
+    public UserModel getUser() {
         return user;
     }
 }
