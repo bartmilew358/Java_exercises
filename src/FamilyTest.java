@@ -7,5 +7,9 @@ public class FamilyTest {
 
         System.out.println(family1.family());
         System.out.println(family2.family());
+        
+        // dzień dobry piszę z GITHUBA xd
+        
+        
     }
 }
