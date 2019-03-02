@@ -10,21 +10,29 @@ public class Task4 {
 
     public static void theSameStrings(String text1, String text2) {
 
-        if (text1.length() != text2.length()) System.out.println("Teksty są różne");
+        if (text1.length() != text2.length()) {
 
-        for (int i = 0; i < text1.length(); i++) {
+            System.out.println("Wyrazy są różne");
 
-         if (text1.charAt(i) == text2.charAt(i)) {
+        } else {
 
-         }   else
-             {
-                 System.out.println("Teksty są różne.");
-                 break;
-         }
-            System.out.println("Teksty są takie same.");
+            int textLength = text1.length();
+            int i;
+
+            for (i = 0; i < textLength; i++) {
+
+                if (text1.charAt(i) == text2.charAt(i)) {
+                    //continue;
+
+                } else {
+                    System.out.println("Wyrazy są różne.");
+                    break;
+                }
+            }
+
+            if (i == (textLength)) {
+                System.out.println("Wyrazy są identyczne.");
+            }
         }
-
     }
-
-
 }
