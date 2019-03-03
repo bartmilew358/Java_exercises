@@ -5,9 +5,7 @@ public class Task4 {
     public static void main(String[] args) {
 
         float[] tab1 = {1,2,3,5,8,13};
-
         doubleArray(tab1);
-
     }
 
     private static void doubleArray(float... str) {
