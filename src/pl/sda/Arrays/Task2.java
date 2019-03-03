@@ -14,7 +14,7 @@ public class Task2 {
 
     }
 
-    private static int addArray(int[] str) {
+    private static int addArray(int... str) {
 
         int sum = 0;
 

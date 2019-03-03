@@ -5,8 +5,6 @@ package pl.sda.Arrays;
 * zaczynając od 2, tablica ma zawierać ilość liczb wskazanych przez parametr count.
 * */
 
-
-
 public class Task3 {
 
     public static void main(String[] args) {

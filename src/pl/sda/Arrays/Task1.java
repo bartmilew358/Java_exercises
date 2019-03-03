@@ -14,7 +14,7 @@ public class Task1 {
 
     }
 
-    private static void showArray(String[] str) {
+    private static void showArray(String... str) {
 
         for (int i = 0; i < str.length; i++) {
             System.out.println(str[i]);
