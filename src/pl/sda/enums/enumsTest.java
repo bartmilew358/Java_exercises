@@ -10,11 +10,8 @@ public class enumsTest {
         Operation o2 = Operation.MINUS;
         o2.calculate(5,8);
 
-
-
         Currency c1 = Currency.POLSKI_ZAŁOTY;
         System.out.println("Przeliacznie złotych na euro = " + c1.changePLN_EUR(100));
-        //////kjhkgkjhgkjg
     }
 
 }
