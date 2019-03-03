@@ -14,6 +14,7 @@ public class enumsTest {
 
         Currency c1 = Currency.POLSKI_ZAŁOTY;
         System.out.println("Przeliacznie złotych na euro = " + c1.changePLN_EUR(100));
+        //////kjhkgkjhgkjg
     }
 
 }
