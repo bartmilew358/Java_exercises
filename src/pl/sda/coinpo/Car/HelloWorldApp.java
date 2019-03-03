@@ -1,4 +1,4 @@
-package pl.sda.objectstask.Car;
+package pl.sda.coinpo.Car;
 
 public class HelloWorldApp {
 
