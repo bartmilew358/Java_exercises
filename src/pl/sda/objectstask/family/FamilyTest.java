@@ -30,7 +30,10 @@ public class FamilyTest {
         System.out.println("avgAge = " + (husband1.getPersonAge() + wife1.getPersonAge() + child1.getPersonAge())/3);
 
 
+
+
     }
+
 
 
 }
