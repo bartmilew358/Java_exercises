@@ -4,14 +4,27 @@ public class enumsTest {
 
     public static void main(String[] args) {
 
+        double a = 5;
+        double b = 7;
+
         Operation o1 = Operation.PLUS;
-        o1.calculate(5,8);
+        o1.calculate(a,b);
 
         Operation o2 = Operation.MINUS;
-        o2.calculate(5,8);
+        o2.calculate(a,b);
+
+        Operation o3 = Operation.MULTIPLE;
+        o3.calculate(a,b);
+
+        Operation o4 = Operation.DIVIDE;
+        o4.calculate(a,b);
+
+        double pln = 202.8;
 
         Currency c1 = Currency.POLSKI_ZAŁOTY;
-        System.out.println("Przeliacznie złotych na euro = " + c1.changePLN_EUR(100));
+        System.out.println(pln + " zł to " + c1.changePLN_EUR(pln)/100 + " EUR");
+
+
     }
 
 }

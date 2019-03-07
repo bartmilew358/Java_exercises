@@ -23,17 +23,18 @@ public enum Operation {
         switch (this) {
 
             case PLUS:
-                System.out.println("Plus " + (a+b));
+                System.out.println(a + " + " + b + " = " + (a+b));
                 break;
             case MINUS:
-                System.out.println("Minus " + (a-b));
+                System.out.println(a + " - " + b + " = " + (a-b));
                 break;
             case DIVIDE:
-                System.out.println("Multiple " + (a*b));
+                System.out.println(a + " * " + b + " = " + (a*b));
                 break;
             case MULTIPLE:
-                System.out.println("Devide " + (a/b));
+                System.out.println(a + " / " + b + " = " + (a/b));
                 break;
         }
     }
+
 }
