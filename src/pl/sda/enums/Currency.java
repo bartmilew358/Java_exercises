@@ -46,7 +46,7 @@ public enum Currency {
 
     public double changePLN_EUR (double a) {
 
-        return ((Math.round((a / this.getCoursePLN_EUR())*100)));
+        return ((Math.round((a / this.getCoursePLN_EUR())*100)));//
 
     }
 
