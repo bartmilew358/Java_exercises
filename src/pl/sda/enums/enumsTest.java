@@ -25,6 +25,8 @@ public class enumsTest {
         System.out.println(pln + " zł to " + c1.changePLN_EUR(pln)/100 + " EUR");
 
 
+        System.out.println("***********");
+
         //* Zadbaj by można było na bazie reprezentacji tekstowej ("PLN",  "+" itp)
         //  znaleźć odpowiednią wartość enum Currency i Operation.
 

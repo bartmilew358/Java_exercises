@@ -1,15 +1,17 @@
-package pl.sda.objectstask.Car;
+package pl.sda.Arrays;
 
-public class Car {
+//import pl.sda.objectstask.Car1.Entertainment;
+
+public class Car1 {
 
     private String brand;
     private String color;
-    private Entertainment radio;
+    //private Entertainment radio;
 
-    public Car(String brand, String color, Entertainment radio) {
+    public Car1(String brand, String color) {
         this.brand = brand;
         this.color = color;
-        this.radio = radio;
+        //this.radio = radio;
     }
 
     public String getBrand() {
@@ -20,16 +22,16 @@ public class Car {
         return color;
     }
 
-    public Entertainment getRadio() {
-        return radio;
-    }
+   // public Entertainment getRadio() {
+        //return radio;
+    //}
 
     @Override
     public String toString() {
         return "Car1{" +
                 "brand='" + brand + '\'' +
                 ", color='" + color + '\'' +
-                ", radio=" + radio +
+               // ", radio=" + radio +
                 '}';
     }
 

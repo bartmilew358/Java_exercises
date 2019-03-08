@@ -9,14 +9,14 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        System.out.println(oddArray(8));
+        // System.out.println(oddArray(8));
+
         showArray(oddArray(8));
     }
 
     private static int[] oddArray(int n) {
 
         int[] temp = new int[n];
-
 
         for (int i = 0; i < temp.length; i++) {
             temp[i] = 2 * (i + 1);

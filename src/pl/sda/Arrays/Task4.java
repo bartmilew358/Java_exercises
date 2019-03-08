@@ -1,4 +1,8 @@
 package pl.sda.Arrays;
+/*
+* Napisz metodę, która jako parametr przyjmuje zmienną typu double[] i wyświetla na konsoli: pierwszy,
+* środkowy (jeden lub dwa środkowe) i ostatni element tablicy, a także średnią arytmetyczną wszystkich liczb z tabeli.
+* */
 
 public class Task4 {
 
