@@ -30,7 +30,6 @@ public class Task9 {
                 return false;
             }
         } while (i == var);
-
         return true;
     }
 }
