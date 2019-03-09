@@ -21,4 +21,10 @@ public class Hammer extends Tool {
                 "weight=" + weight +
                 '}';
     }
+
+    public String getDetails() {
+        return super.getDetails() + " Hammer weight " + weight;
+    }
+
+
 }

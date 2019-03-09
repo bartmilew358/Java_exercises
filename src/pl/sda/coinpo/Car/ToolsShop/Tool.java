@@ -26,4 +26,10 @@ public class Tool {
                 ", price=" + price +
                 '}';
     }
+
+    public String getDetails() {
+        return "Tool " + model +" price " + price;
+    }
+
+
 }

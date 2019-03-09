@@ -21,4 +21,10 @@ public class Saw extends Tool {
                 "lenght=" + lenght +
                 '}';
     }
+
+    public String getDetails() {
+        return super.getDetails() + " Saw lenght " + lenght;
+    }
+
+
 }
