@@ -1,9 +1,6 @@
-package pl.sda.strings;
+package pl.sda.stringsTasks;
 
  /* Napisz klasę, która wykorzysta większość z metod dostępnych w klasie String */
-
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
 
 public class Stringtask {
 

@@ -30,7 +30,7 @@ public class Family {
         return name;
     }
 
-    //Zadanie 4 #strings
+    //Zadanie 4 #stringsTasks
     //Dodaj do klas reprezentujących osobę i rodzinę utworzonych w zadaniu na początku zajęć metody toString(),
     //które w czytelny sposób wyświetlą informacje o obiekcie.
 
