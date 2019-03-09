@@ -12,6 +12,8 @@ public class OnlineShop {
         UserModel user1 = new UserModel("Janusz", "Renta", 50);
         System.out.println(user1.getFirstName() + " " + user1.getLastName() + " " + user1.getAge());
 
+        //
+
 
     }
 }
