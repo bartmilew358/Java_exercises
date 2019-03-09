@@ -9,6 +9,21 @@ public class ToolsShop {
         Tool no2 = new Saw("saw_1", 299,24);
         System.out.println(no2);
 
+        System.out.println("Cena no2: " + no2.getPrice());
+
+        System.out.println("*******************************************");
+        System.out.println("Za pomocą tablicy.");
+        
+        Tool[] tools = {no1,no2};
+//        Tool[] tools = new Tool[2];
+
+        for (int i = 0; i < tools.length; i++) {
+            Tool tool = tools[i];
+            System.out.println(tool);
+
+            
+        }
+        
     }
 
 

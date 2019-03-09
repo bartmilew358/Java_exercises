@@ -16,9 +16,9 @@ public class Hammer extends Tool {
     @Override
     public String toString() {
         return "Hammer{" +
-                "weight=" + weight +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", price=" + price +
+                "weight=" + weight +
                 '}';
     }
 }

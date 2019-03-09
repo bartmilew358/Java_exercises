@@ -16,9 +16,9 @@ public class Saw extends Tool {
     @Override
     public String toString() {
         return "Saw{" +
-                "lenght=" + lenght +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", price=" + price +
+                "lenght=" + lenght +
                 '}';
     }
 }
