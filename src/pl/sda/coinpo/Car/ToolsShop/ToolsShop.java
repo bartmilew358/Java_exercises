@@ -2,10 +2,6 @@ package pl.sda.coinpo.Car.ToolsShop;
 
 public class ToolsShop {
 
-
-
-
-
     public static void main(String[] args) {
 
         Tool mlotek1 = new Hammer("mlot_1", 199,30);
@@ -25,12 +21,5 @@ public class ToolsShop {
             Tool tool = tools[i];
             System.out.println(tool.getDetails());
         }
-
-
     }
-
-
-
-
-
 }
