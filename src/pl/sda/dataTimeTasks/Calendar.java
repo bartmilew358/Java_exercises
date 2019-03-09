@@ -31,7 +31,7 @@ public class Calendar {
         ZonedDateTime MyBirthday3 = ZonedDateTime.now();
         System.out.println("My Birthday: " + MyBirthday.getDayOfMonth() + " " + MyBirthday.getMonth() + " " +  MyBirthday.getYear() + " " + MyBirthday3.getZone());
 
-         // Task 6 Dla swojej daty urodzenia wyświetl ilość lat, miesięcy, dni i godzin, które miały miejsce do obecnego momentu.
+         // Task 6 - Dla swojej daty urodzenia wyświetl ilość lat, miesięcy, dni i godzin, które miały miejsce do obecnego momentu.
          // Następnie wypisz ile minut (całkowicie) i sekund (całkowicie) minęło od daty urodzenia.
 
         LocalDateTime localTime = LocalDateTime.now();
@@ -55,6 +55,10 @@ public class Calendar {
         System.out.println("Period: " + between);
 
         System.out.println("Od Twojego urodzenia minęło: " + between.getYears() + " lat " + between.getMonths() + " miesięcy " + between.getDays() + " dni. ");
+
+        // Task 7 - Napisz program, który wyświetli dni tygodnia, w których obchodzić będziesz urodziny przez kolejne 10 lat.
+
+        // TODO: 2019-03-09  
 
     }
 }
