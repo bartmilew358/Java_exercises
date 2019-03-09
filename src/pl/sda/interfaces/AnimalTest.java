@@ -1,5 +1,7 @@
 package pl.sda.interfaces;
 
+// zrobione do zadania 6 włącznie
+
 public class AnimalTest {
 
     public static void main(String[] args) {

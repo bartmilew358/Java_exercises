@@ -1,6 +1,6 @@
 package pl.sda.interfaces;
 
-public interface Being {
+public interface Being extends Animal{
 
     int getAge();
     int MAX_AGE = 100;
