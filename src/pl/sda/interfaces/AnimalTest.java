@@ -1,6 +1,6 @@
 package pl.sda.interfaces;
 
-// zrobione do zadania 6 włącznie
+// zrobione do zadania 7 włącznie
 
 public class AnimalTest {
 
