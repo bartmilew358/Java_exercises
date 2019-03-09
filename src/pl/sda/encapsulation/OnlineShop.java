@@ -1,7 +1,7 @@
-package pl.sda.objectstask.task;
+package pl.sda.encapsulation;
 
-import pl.sda.objectstask.task.item.ItemModel;
-import pl.sda.objectstask.task.user.UserModel;
+import pl.sda.encapsulation.item.ItemModel;
+import pl.sda.encapsulation.user.UserModel;
 
 public class OnlineShop {
     public static void main(String[] args) {

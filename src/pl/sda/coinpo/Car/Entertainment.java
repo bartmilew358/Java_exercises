@@ -1,16 +1,14 @@
 package pl.sda.coinpo.Car;
 
-public class Entertainment {
+public class Entertainment extends Car {
 
-    int volume = 5;
-    private boolean isMusicOn(){
-        return (volume > 0);
-    }
-    public void volumeUp () {
-        volume = volume + 1;
-    }
-    public void volumeDown(){
-        volume = volume - 1;
-    }
+    private boolean radio;
 
+    public Entertainment(String brand,
+                         String color,
+                         Entertainment radio,
+                         boolean radio1) {
+        super(brand, color, radio);
+        this.radio = radio1;
+    }
 }

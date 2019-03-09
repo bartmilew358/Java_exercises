@@ -1,4 +1,4 @@
-package pl.sda.objectstask.task.user;
+package pl.sda.encapsulation.user;
 
 public class UserModel {
     private String firstName;
