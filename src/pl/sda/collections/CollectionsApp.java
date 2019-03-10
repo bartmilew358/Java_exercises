@@ -80,5 +80,13 @@ public class CollectionsApp {
 
         System.out.println("Suma pól:  " + sumArea);
         System.out.println("Suma obwodów:  " + perimeter);
+
+        System.out.println(isEqualCollection(listC,listR));
+    }
+
+    public static boolean isEqualCollection (List a, List b) {
+        return a.equals(b);
     }
 }
+
+
