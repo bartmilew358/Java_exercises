@@ -58,7 +58,8 @@ public class Calendar {
 
         // Task 7 - Napisz program, który wyświetli dni tygodnia, w których obchodzić będziesz urodziny przez kolejne 10 lat.
 
-        // TODO: 2019-03-09  
-
+        // TODO: 2019-03-09
+        // check it with instant
+        // klasa period ktorz umożliwia jaki był dzień tygodnia w dany dzień
     }
 }
