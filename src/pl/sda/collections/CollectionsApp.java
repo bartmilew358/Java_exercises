@@ -84,6 +84,9 @@ public class CollectionsApp {
         System.out.println(isEqualCollection(listC,listR));
     }
 
+    // Task 2
+    // Napisz metodę, która porówna ze sobą dwie kolekcje i wyświetli rezultat na konsoli.
+
     public static boolean isEqualCollection (List a, List b) {
         return a.equals(b);
     }
