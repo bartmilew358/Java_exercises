@@ -17,7 +17,5 @@ public class GetNumber {
             System.out.println("wyjątek");
         }
         System.out.println(number);
-
-
     }
 }
