@@ -6,7 +6,7 @@ public class ListCharacters {
 
         for (char c = 0; c < 128; c++){
             if (Character.isLowerCase(c))
-                System.out.println("Wartość: " + (int)c + " znak: " + c);
+                System.out.println("Wartość: " + (int)c + " znak: " + c); //
         }
     }
 }
