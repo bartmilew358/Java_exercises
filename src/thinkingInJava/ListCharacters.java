@@ -14,13 +14,19 @@ public class ListCharacters {
 
         System.out.println("1 - drukuje alfabet małych liter.");
         System.out.println("2 - drukuje alfabet dużych liter.");
+
         System.out.println("3 - Wyjście z programu.");
-        int a = scan.nextInt();
+
+        while (true) {
+            int a = scan.nextInt();
 
         switch (a) {
-            case 1 : smallCharacters();
-            case 2 : largeCharacters();
-            case 3 : break;
+            case 1:
+                smallCharacters();
+            case 2:
+                largeCharacters();
+            }
+            if (a == 3) {break;}
         }
     }
 
