@@ -28,7 +28,9 @@ public class ListCharacters {
             case 2:
                 largeCharacters();
             }
-            if (a == 3) {break;}
+            if (a == 3) {
+                break;
+            }
         }
     }
 

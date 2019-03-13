@@ -1,10 +1,9 @@
 package pl.sda.dataTimeTasks;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Period;
-import java.time.ZonedDateTime;
+import java.text.SimpleDateFormat;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class Calendar {
 
@@ -37,35 +36,49 @@ public class Calendar {
         LocalDateTime localTime = LocalDateTime.now();
          System.out.println("LocalTime: " + localTime);
 
-//        System.out.println("Od mojego urodzenia minęło: " + (localTime.getYear() - MyBirthday.getYear()) +
-//                " lat " + (MyBirthday.getMonthValue() + localTime.getMonthValue()) + " miesięcy " +
-//                        (MyBirthday.getDayOfMonth() - localTime.getDayOfMonth()) + " dni " +
-//                        (localTime.getHour() - MyBirthdayExtend.getHour()) + " godzin " +
-//                        (localTime.getMinute() - MyBirthdayExtend.getMinute()) + " minut.");
-
         LocalDateTime localDateTime = LocalDateTime.now();
 
         LocalDate localDate = LocalDate.now();
         LocalDate initialDate  = LocalDate.parse("1987-05-11");
-//        LocalDate finalDate = LocalDate.parse("2018-10-01");
+
         Period between = Period.between(MyBirthday, localDate);
 
-        // To niżej nie działa. Muszę to rozkminić.
-//        Period between2 = Period.between(MyBirthdayExtend, localDateTime);
-        System.out.println("Period: " + between);
+        LocalTime birthdayTime = LocalTime.of(16, 14, 30);
 
+        Duration between2 = Duration.between(birthdayTime, LocalTime.now());
+        long durationMinutes = between2.toMinutes();
+        long durationMinutes2 = ChronoUnit.MINUTES.between(birthdayTime, localTime);
+        long durationSeconds = between2.getSeconds();
+        long durationSeconds2 = ChronoUnit.MINUTES.between(birthdayTime, localTime);
+
+        System.out.println("Period: " + between);
+        System.out.println("Period: " + between2);
         System.out.println("Od Twojego urodzenia minęło: " + between.getYears() + " lat " + between.getMonths() + " miesięcy " + between.getDays() + " dni. ");
 
-        // Task 7 - Napisz program, który wyświetli dni tygodnia, w których obchodzić będziesz urodziny przez kolejne 10 lat.
+        System.out.println(durationMinutes);
+        System.out.println(durationMinutes2);
 
-        // TODO: 2019-03-09
-//<<<<<<< Updated upstream
-        // check it with instant
-        // klasa period ktorz umożliwia jaki był dzień tygodnia w dany dzień
-//=======
+        System.out.println(durationSeconds);
+        System.out.println(durationSeconds2);
 
 
 
-//>>>>>>> Stashed changes
+         // Task 7 - Napisz program, który wyświetli dni tygodnia, w których obchodzić będziesz urodziny przez kolejne 10 lat.
+
+        for (int i = 2019; i <2030; i++) {
+            LocalDate MyBirthday2 = LocalDate.of(i, 5, 11);
+            System.out.println("W roku " + i + " urodziny przypadają w " + MyBirthday2.getDayOfWeek());
+        }
+
+         Instant test
+
+        Instant instant = Instant.now();
+        System.out.println("Instant = " + instant);
+
+        // Task 8 - Napisz metodę, która pobierze tablicę dat (LocalDate) i zwróci najnowszą datę.
+
+
+
+
     }
 }
