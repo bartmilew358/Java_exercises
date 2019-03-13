@@ -70,7 +70,7 @@ public class Calendar {
             System.out.println("W roku " + i + " urodziny przypadają w " + MyBirthday2.getDayOfWeek());
         }
 
-         Instant test
+         // Instant test
 
         Instant instant = Instant.now();
         System.out.println("Instant = " + instant);
@@ -80,5 +80,13 @@ public class Calendar {
 
 
 
+
+
     }
+
+
+
+
+
+
 }
