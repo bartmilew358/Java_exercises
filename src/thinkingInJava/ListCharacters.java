@@ -1,3 +1,5 @@
+// Program w którym bawiłem się w tworzenie małego menu.
+
 package thinkingInJava;
 
 import java.util.Scanner;
