@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 
 public class sdaTasks {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Path baseFolder = Paths.get("C:\\io_test");
         System.out.println("baseFolder = " + baseFolder);
@@ -58,8 +58,16 @@ public class sdaTasks {
 
         // Task 5 - Napisz kod, który skopiuje zawartość dowolnego pliku (tekstowego lub binarnego) do drugiego pliku.
 
-//        Files.copy
+        Path pathToDirectory = Paths.get("C:\\io_test2");
+        Path pathToFile = Paths.get("C:\\io_test2\\text.txt");
+        Path pathToAnotherFile = Paths.get("C:\\io_test2\\text2.txt");
 
+        Files.createDirectory(pathToDirectory); // tworzy katalog
+        Files.createDirectories(pathToDirectory); // tworzy katalog z katalogami pośrednimi
+
+        Files.createFile(pathToFile); // tworzy pusty plik
+
+        Files.copy(pathToFile, pathToAnotherFile); // kopiuje plik
 
     }
 }
