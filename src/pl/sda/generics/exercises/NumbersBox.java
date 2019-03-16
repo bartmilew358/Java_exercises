@@ -20,6 +20,16 @@ public class NumbersBox<T extends Number> {
         }
     }
 
+    // CZEMU NIE MOŻE BY TAK??!!
+//    public T boolean isEmpty() {
+//
+//        if (items.isEmpty()){
+//            return true;
+//        }else {
+//            return false;
+//        }
+//    }
+
     public T firstElement() {
 
         return items.get(0);
@@ -30,7 +40,6 @@ public class NumbersBox<T extends Number> {
         T firstElement = firstElement();
         return firstElement.intValue();
     }
-
 
     public T lastElement() {
 
