@@ -13,7 +13,7 @@ public class Compare_Task8 {
         System.out.println("Czs dla tworzenia HashSet z " + size + " elementów: " + HashSetTime(size) + " ms");
         System.out.println("Czs dla tworzenia TreeSet z " + size + " elementów: " + TreeSetTime(size) + " ms");
         System.out.println("Czs dla tworzenia HashMap z " + size + " elementów: " + HashMapTime(size) + " ms");
-        System.out.println("Czs dla tworzenia HashMap z " + size + " elementów: " + TreeMapTime(size) + " ms");
+        System.out.println("Czs dla tworzenia Map z " + size + " elementów: " + TreeMapTime(size) + " ms");
 
 
     }
