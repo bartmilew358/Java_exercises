@@ -1,5 +1,6 @@
 package pl.sda.io;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -61,6 +62,15 @@ public class ioTasks {
             for (Path path1 : pathList) {
                 System.out.println("path = " + path1.toAbsolutePath());
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            FileWriter fileWriter = new FileWriter((path.toString()));
+            fileWriter.write("Ala to głupia pizda.");
+            fileWriter.close();
+//            fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
