@@ -1,7 +1,9 @@
 package pl.sda.io;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -66,13 +68,48 @@ public class ioTasks {
             e.printStackTrace();
         }
 
+
         try {
-            FileWriter fileWriter = new FileWriter((path.toString()));
-            fileWriter.write("Ala to głupia pizda.");
+            FileWriter fileWriter = new FileWriter((path.toString()), true);
+            fileWriter.write("Okoń to najpiękniejsza ryba górskich rzek.");
+
             fileWriter.close();
 //            fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
+
+
+            try (PrintWriter printWriter = new PrintWriter(path.toString())) {
+
+                printWriter.println("Oko na maszynach!\n");
+                printWriter.println("Oko na maszynach!\n");
+                printWriter.println("Oko na maszynach!\n");
+
+            } catch (FileNotFoundException f) {
+                f.printStackTrace();
+            }
+
+
+
+//            FileWriter fileWriter = null;
+//            try {
+//                fileWriter = new FileWriter((path.toString()));
+//                fileWriter.write("Okoń to najpiękniejsza ryba górskich rzek.");
+//
+//                fileWriter.close();
+////            fileWriter.flush();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                try {
+//                    if(fileWriter != null) {
+//                        fileWriter.close();
+//                    }
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+
+
         }
     }
 }
