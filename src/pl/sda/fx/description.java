@@ -28,7 +28,7 @@ public class description extends Application {
         Text text = new Text("przed przeliczeniem na Base64");
 
 
-
+//nmnmnmnm
 //        String encoded = Base64.getEncoder().encodeToString();
 
 //        button.setOnAction(e -> text.setText(encoded));
