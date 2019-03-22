@@ -1,5 +1,7 @@
 package pl.sda.fx;
 
+import javafx.event.ActionEvent;
+
 import java.awt.*;
 
 public class Calc {
@@ -11,7 +13,12 @@ public class Calc {
     }
 
 
+    public void put1(ActionEvent actionEvent) {
 
 
 
+
+
+
+    }
 }
