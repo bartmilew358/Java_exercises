@@ -85,4 +85,9 @@ public enum deck {
                 ", card_value=" + card_value +
                 '}';
     }
+
+    public static deck getRandom() {
+        return values()[(int) (Math.random() * values().length)];
+    }
+
 }

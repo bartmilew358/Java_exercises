@@ -1,7 +1,12 @@
 package pl.sda.poker_game;
 
+// test implementacji tali kart w inny sposób niż enum + sprawdzenie czasu wykonania
+
 public class deck_v2 {
     public static void main(String[] args) {
+
+        long start=System.currentTimeMillis();
+
         String[] SUITS = {
 
 // clubs - Krzyże, diamonds - Karo, hearts - Serca, soades - Piki
@@ -35,6 +40,10 @@ public class deck_v2 {
         for (int i = 0; i < n; i++) {
             System.out.println(deck[i]);
         }
+
+        long stop=System.currentTimeMillis();
+
+        System.out.println("Czas operacji: " + (stop-start) + "ms");
     }
 
 }
