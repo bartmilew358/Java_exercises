@@ -1,5 +1,5 @@
 package pl.sda.poker_game;
-
+//
 public enum deck {
 
     card1("2", "c", 2),
