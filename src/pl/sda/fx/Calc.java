@@ -9,9 +9,13 @@ public class Calc {
     public static void main(String[] args) {
 
 
+
     }
 
-    public void show1(ActionEvent actionEvent) {
+
+    public void put1(ActionEvent actionEvent) {
+
+
 
 
 
