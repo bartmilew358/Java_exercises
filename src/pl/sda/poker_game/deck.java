@@ -87,7 +87,12 @@ public enum deck {
     }
 
     public static deck getRandom() {
+
+//        return values()[(int) (Math.random() * values().length)];
         return values()[(int) (Math.random() * values().length)];
+
+
     }
+
 
 }

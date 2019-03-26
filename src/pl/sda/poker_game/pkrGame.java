@@ -14,6 +14,14 @@ public class pkrGame {
 //        System.out.println(player1);
 
         System.out.println("Dealerem jest zawodnik nr: " + giveTheButton());
+
+
+        // here I was just checked deck's random
+//        for (int i = 0; i<100000; i++){
+//            System.out.println(deck.getRandom().getCard_value());
+//        }
+
+
     }
 
     private static int giveTheButton() {
@@ -26,8 +34,9 @@ public class pkrGame {
 
             var = deck.getRandom().getCard_value();
 
+            // jeśli program wylosuje Asa to przestaje dalej odliczać i BTN otrzymuje gracz który dostał Asa tj. value of card = 14
             if (var == 14) {
-                positionForButton = i;
+                positionForButton = i + 1;
                 return positionForButton;
             }
             else
