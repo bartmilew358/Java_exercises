@@ -77,16 +77,58 @@ public class Calendar {
 
         // Task 8 - Napisz metodę, która pobierze tablicę dat (LocalDate) i zwróci najnowszą datę.
 
+        LocalDate maxDate = getMaxDate(
+                LocalDate.of(2014, Month.DECEMBER, 29),
+                LocalDate.of(2018, Month.APRIL, 16),
+                LocalDate.of(2018, Month.APRIL, 10),
+                LocalDate.of(2015, Month.SEPTEMBER, 22),
+                LocalDate.of(2022, Month.JANUARY, 1)
+        );
+        System.out.println("maxDate = " + maxDate);
 
 
+        // Task 9 - Napisz metodę, która pobierze tablicę dat i godzin (LocalDateTime) i zwróci najstarszą datę.
 
+        LocalDateTime minDateTime = getMinDateTime(
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 28),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 4),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 8),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 1),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 22),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 13),
+                LocalDateTime.of(2018, Month.APRIL, 2, 22, 2)
+        );
+        System.out.println("minDateTime = " + minDateTime);
 
 
     }
+    private static LocalDate getMaxDate(LocalDate... dates) {
+        if (dates.length == 0) {
+            return null;
+        }
 
+        LocalDate maxDate = dates[0];
+        for (LocalDate date : dates) {
+            if (date.isAfter(maxDate)) {
+                maxDate = date;
+            }
+        }
 
+        return maxDate;
+    }
 
+    private static LocalDateTime getMinDateTime(LocalDateTime... dates) {
+        if (dates.length == 0) {
+            return null;
+        }
 
+        LocalDateTime minDate = dates[0];
+        for (LocalDateTime date : dates) {
+            if (date.isBefore(minDate)) {
+                minDate = date;
+            }
+        }
 
-
+        return minDate;
+    }
 }
