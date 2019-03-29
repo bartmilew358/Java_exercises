@@ -2,15 +2,13 @@ package pl.sda.functional;
 
 import org.w3c.dom.ranges.Range;
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-import java.util.stream.Collectors;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.stream.*;
 
 public class Tasks {
 
@@ -76,9 +74,8 @@ public class Tasks {
      * - utwórz stream liczb całkowitych od 10 do 40, usuń parzyste i podaj sumę pozostałych
      * - utwórz stream obiektów typu String, zamień wszystkie litery na małe, zostaw tylko te które zaczynają się na literę 'a' lub 'z'
      *   i utwórz listę przetworzonych elementów
-     * - utwórz stream obiektów Person i utwórz statystykę lat (suma, średnia, minimalny i maksymalny wiek) dla tego zbioru
-     * - utwórz strumień który wypisze na ekran ścieżki wszystkich katalogów i podkatalogów znajdujących się w aktualnym katalogu (Files.list && Paths.get("."))
      */
+
     private static void useStreams() {
 
         Set<Double> list = new HashSet<>();
@@ -87,23 +84,42 @@ public class Tasks {
         list.add(17.28d);
         list.add(300.12d);
 
-        Stream<Double> stream = list.stream();
+        list.stream().forEach(s -> System.out.print(s + " , "));
 
-//        System.out.println(stream.map());
-
-
+        System.out.println();
 
 
+        Double sum = list.stream().reduce(0.0, (a , b) -> a + b);
+        System.out.println("sum = " + sum);
 
-        IntStream.range(10, 40);
+        Double avg = (sum / list.stream().count());
+        System.out.println("avg = " + avg);
+
+        // utwórz stream liczb całkowitych od 10 do 40, usuń parzyste i podaj sumę pozostałych
+
+        List<Integer> integerList = new ArrayList<>();
+
+        for (int i = 10; i <= 40; i++) {
+            integerList.add(i);
+        }
+
+        System.out.println();
+        System.out.println(integerList);
+
+        int sumEvenNumbers = integerList.stream().filter(s -> s%2 == 0).reduce(0, (a,b) -> a+b);
+        System.out.println(sumEvenNumbers);
 
 
-//        List<String> names = Arrays.asList("Marcin", "Łukasz", "Marta", "Adam", "Ewa", "Adam");
-//        List<String> listOfNames = names.stream()
+//        - utwórz stream obiektów typu String, zamień wszystkie litery na małe, zostaw tylko te które zaczynają się na literę 'a' lub 'z'
+//                *   i utwórz listę przetworzonych elementów
 
 
+        List<String> namesList = Arrays.asList("Abelard", "Bogumił", "Cecyl", "Dobrzymir", "Wjesławodar", "Zobomir", "Akwalojz", "Czekanosław");
+        System.out.println();
+        System.out.println(namesList);
 
-
+        List<String> azNamesList = namesList.stream().map(s -> s.toLowerCase()).filter(s -> s.startsWith("a") || s.startsWith("z")).collect(Collectors.toList());
+        System.out.println(azNamesList);
 
     }
 }
