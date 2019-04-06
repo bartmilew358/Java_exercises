@@ -3,27 +3,39 @@ package pl.sda.mini_project;
 import pl.sda.mini_project.books.Book;
 import pl.sda.mini_project.books.BookType;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class BooksManager {
+    private List<Book> books;
 
+    public BooksManager () {
+        books = createBooks();
+
+    }
     public List<Book> findBooks() {
-        // tutaj była dopisana linijka poniżej xDDDDDD
-        createBooks();
-        return new ArrayList<>();
+        return books;
     }
 
 
     public void addBook(String author, String title, BookType type) {
+
+        books.add(new Book(author, title, BookType.HISTORICAL));
+
     }
 
     public boolean deleteBook(int bookId) {
+
+        books.remove(bookId - 1);
         return false;
     }
 
     public List<Book> getSortedByAuthor() {
-        return null;
+
+        Comparator<Book> a = Comparator.comparing(Book::getAuthor).thenComparing(Book::getAuthor);
+
+        Collections.sort(books, a);
+        return books;
     }
 
     public List<Book> getSortedByType() {
