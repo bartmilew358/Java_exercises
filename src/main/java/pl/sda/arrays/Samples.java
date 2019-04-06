@@ -15,7 +15,7 @@ public class Samples {
 
         //#3
         //użycie klasy Arrays
-        arraysUtils();
+//        arraysUtils();
 
         //#4
         //varargs
@@ -23,7 +23,7 @@ public class Samples {
 
         //#5
         //sortowanie elementów tablicy
-        //arraysSorting();
+        arraysSorting();
 
         //#6
         //użycie tablic jako źródła dla streamów

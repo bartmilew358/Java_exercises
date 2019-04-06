@@ -27,19 +27,19 @@ public class Tasks {
 //        System.out.println("wordsExtended = " + Arrays.toString(wordsExtended));
 
         //#5
-        String[] words = {"one", "two", "three", "four"};
-        words = addElementToArray(words, "five");
-        words = addElementToArray(words, "six");
-        words = addElementToArray(words, "seven");
-        System.out.println("wordsExtended = " + Arrays.toString(words));
+//        String[] words = {"one", "two", "three", "four"};
+//        words = addElementToArray(words, "five");
+//        words = addElementToArray(words, "six");
+//        words = addElementToArray(words, "seven");
+//        System.out.println("wordsExtended = " + Arrays.toString(words));
 
         //#6
-        //Car[] cars = {new Car("Porshe", 2011, 10), new Car("Skoda", 2004, 8), new Car("Ford Mondeo", 2005, 9), new Car("Fiat", 2000, 4),
-        //              new Car("Audi", 2016, 8), new Car("Toyota", 2005, 7), new Car("Honda", 2011, 9), new Car("Ford S-max", 2014, 9)};
-        //cars = sortCars(cars);
-        //System.out.println("cars sorted:");
-        //Arrays.stream(cars)
-        //     .forEach(System.out::println);
+        Car[] cars = {new Car("Porshe", 2011, 10), new Car("Skoda", 2004, 8), new Car("Ford", 2005, 9), new Car("Fiat", 2000, 4),
+                      new Car("Audi", 2016, 8), new Car("Toyota", 2005, 7), new Car("Honda", 2011, 9), new Car("Ford", 2014, 9)};
+        cars = sortCars(cars);
+        System.out.println("cars sorted:");
+        Arrays.stream(cars)
+             .forEach(System.out::println);
 
         //#7
         //cars = sortCarsByRating(cars);
@@ -124,7 +124,6 @@ public class Tasks {
         }
 
         String[] extend_array = new String[words.length+3];
-
         return null;
     }
 
@@ -140,7 +139,9 @@ public class Tasks {
      *    Następnie posortuj tablicę obiektów Car w porządku naturalnym i ją zwróć
      */
     private static Car[] sortCars(Car[] cars) {
-        return null;
+
+        Arrays.sort(cars);
+        return cars;
     }
 
     /**
