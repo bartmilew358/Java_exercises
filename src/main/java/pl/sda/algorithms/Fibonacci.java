@@ -10,8 +10,8 @@ import java.util.List;
 public class Fibonacci {
     public static void main(String[] args) {
 
-        System.out.println(Fibonacci(50));
-        System.out.println(Fibonacci_rek(50));
+        System.out.println(Fibonacci(30));
+        System.out.println(Fibonacci_rek(30));
     }
 
     private static int Fibonacci(int n) {
@@ -43,6 +43,5 @@ public class Fibonacci {
     private static int Fibonacci_rek (int n) {
 
         return n<2? n : Fibonacci_rek(n - 1) + Fibonacci_rek(n - 2);
-
     }
 }
