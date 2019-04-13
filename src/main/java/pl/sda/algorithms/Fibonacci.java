@@ -10,7 +10,7 @@ import java.util.List;
 public class Fibonacci {
     public static void main(String[] args) {
 
-        System.out.println(Fibonacci(30));
+//        System.out.println(Fibonacci(30));
         System.out.println(Fibonacci_rek(30));
     }
 

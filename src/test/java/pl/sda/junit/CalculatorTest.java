@@ -1,4 +1,4 @@
-package junit;
+package pl.sda.junit;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,7 @@ import pl.sda.junit.Calculator;
 
 public class CalculatorTest {
     @Test
-    public void shouldComputeNumbers() {
+    public void shouldAddComputeNumbers() {
         // given
         int a = 3;
         int b = 7;
@@ -42,6 +42,21 @@ public class CalculatorTest {
 
         // then
         Assertions.assertEquals(70, result);
+//        Assertions.assertEquals(68, result);
+    }
+
+    @Test
+    public void shouldDevideComputeNumbers() {
+        // given
+        int a = 10;
+        int b = 2;
+
+        // when
+        int result = Calculator.devide(a, b);
+
+        // then
+        Assertions.assertEquals(5, result);
+//        Assertions.assertEquals(68, result);
     }
 
 }
