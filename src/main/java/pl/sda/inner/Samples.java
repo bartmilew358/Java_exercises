@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Samples {
@@ -80,10 +81,14 @@ public class Samples {
         // removeIf()
 
         Predicate<Product> predicate = product1 -> product1.getName().length() <= 3;
-
         products.removeIf(predicate);
         System.out.println("predicate = " + products);
 
+        // consumer < 4 znaki
+
+//        Consumer<Product> consumer = product1 -> if (product1.getName().length() <= 4) System.out.println(product1);
+//        products.forEach(consumer);
+//
     }
 
     public static int compare1(Product o1, Product o2) {
