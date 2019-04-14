@@ -5,8 +5,7 @@ public class PrimeNumbers {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-            Integer value = scanner.nextInt();
+        Integer value = scanner.nextInt();
 
             for (int i = 1; i <= (value / 2); i++) {
                 if (value % i == 0) {

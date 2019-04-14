@@ -1,4 +1,4 @@
-package pl.sda.Arrays_old;
+package pl.sda.bubble;
 
 import java.util.Random;
 
@@ -8,7 +8,7 @@ public class RandomTable {
 
 //        bubbleSort(tableOfRandomValue(100,1,1000));
 //        bubbleSort(tableOfRandomValue(1000,1,1000));
-        bubbleSort(tableOfRandomValue(100000,1,1000));
+        bubbleSort(tableOfRandomValue(1000,1,1000));
 //        bubbleSort(tableOfRandomValue(1000, 1, 1000));
 
     }
