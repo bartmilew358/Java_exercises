@@ -17,10 +17,10 @@ public class Samples {
 //        basics();
 
         //#2 typowe logowanie w kodzie
-        logsFromObjects();
+//        logsFromObjects();
 
         //#3 logowanie w programie wielowątkowym
-//        multiThreadedLogsFromObjects();
+        multiThreadedLogsFromObjects();
     }
 
     private static void basics() {
@@ -46,7 +46,7 @@ public class Samples {
     }
 
     private static void multiThreadedLogsFromObjects() {
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
         executorService.submit(Samples::runEngineX);
         executorService.submit(Samples::runEngineY);
         executorService.shutdown();
