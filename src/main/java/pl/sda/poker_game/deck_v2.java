@@ -1,4 +1,4 @@
-package pl.sda.poker_game;
+package main.java.pl.sda.poker_game;
 
 // test implementacji tali kart w inny sposób niż enum + sprawdzenie czasu wykonania
 
