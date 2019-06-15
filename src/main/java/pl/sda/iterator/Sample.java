@@ -9,10 +9,10 @@ import java.util.ListIterator;
 public class Sample {
     public static void main(String[] args) {
         //#1
-//        basicsSamples();
+        basicsSamples();
 
         //#2
-        carsContainer();
+//        carsContainer();
     }
 
     private static void basicsSamples() {
