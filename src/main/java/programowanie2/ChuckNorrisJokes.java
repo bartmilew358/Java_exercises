@@ -30,9 +30,7 @@ public class ChuckNorrisJokes {
 
         Gson gson = new Gson();
         Joke joke = gson.fromJson(sb.toString(), Joke.class);
-        System.out.println();
-
-
+        System.out.println(joke.getValue());
 
     }
 }
