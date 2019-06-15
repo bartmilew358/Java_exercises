@@ -4,33 +4,49 @@ import com.google.gson.Gson;
 import programowanie2.sms.Joke;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ChuckNorrisJokes {
 
     public static void main(String[] args) throws IOException {
 
-        final URL url = new URL("https://api.chucknorris.io/jokes/random");
-        final URLConnection urlConnection = url.openConnection();
-        urlConnection.addRequestProperty("User-Agent", "Chrome");
-        final BufferedReader in = new BufferedReader(new InputStreamReader(
-                urlConnection.getInputStream()));
-        String inputLine;
+        getJokeAboutChuck(10);
+    }
 
-        StringBuilder sb = new StringBuilder();
+    private static void getJokeAboutChuck(int numberOfJokes) throws IOException {
 
-        while ((inputLine = in.readLine()) != null) {
-            System.out.println(inputLine);
-            sb.append(inputLine);
+        ArrayList<String> array = new ArrayList<>();
+
+        for (int i = 0; i < numberOfJokes; i++) {
+
+            final URL url = new URL("https://api.chucknorris.io/jokes/random");
+            final URLConnection urlConnection = url.openConnection();
+            urlConnection.addRequestProperty("User-Agent", "Chrome");
+            final BufferedReader in = new BufferedReader(new InputStreamReader(
+                    urlConnection.getInputStream()));
+            String inputLine;
+
+            StringBuilder sb = new StringBuilder();
+
+            while ((inputLine = in.readLine()) != null) {
+//                System.out.println(inputLine);
+                sb.append(inputLine);
+            }
+            in.close();
+
+            Gson gson = new Gson();
+            Joke joke = gson.fromJson(sb.toString(), Joke.class);
+
+            if (array.contains(joke.getValue())) {
+                continue;
+            }
+            array.add(joke.getValue());
+            System.out.println(joke.getValue());
         }
-
-        in.close();
-
-        Gson gson = new Gson();
-        Joke joke = gson.fromJson(sb.toString(), Joke.class);
-        System.out.println(joke.getValue());
-
     }
 }
