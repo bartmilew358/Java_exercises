@@ -1,4 +1,4 @@
-package programowanie2;
+package programowanie2.sms;
 
 public class Sms {
 
