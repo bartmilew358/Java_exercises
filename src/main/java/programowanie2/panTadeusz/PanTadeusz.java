@@ -13,7 +13,6 @@ public class PanTadeusz {
 
         HashMap<String, Integer> numberOfWords = new HashMap<String, Integer>();
 
-
         while (scanner.hasNextLine()) {
 
             String line = scanner.nextLine();
@@ -24,7 +23,7 @@ public class PanTadeusz {
                 String s33 = s1.replaceAll("[()/\\\\|+{}&,;:<>#\\[\\]]+", " ")
                         .replaceAll("\\p{Space}+", " ")
                         .replaceAll("[^\\p{Alnum}\\p{Space}]", "")
-                        .toUpperCase()
+                        .toLowerCase()
                         .trim();
 
 //                String s2 = s1.replace(" ", "");
@@ -76,6 +75,20 @@ public class PanTadeusz {
         TreeMap<String, Integer> sorted_map = new TreeMap<>(bvc);
         sorted_map.putAll(numberOfWords);
         System.out.println(sorted_map);
+        System.out.println("Liczba wyrazów: " + sorted_map.size());
+
+        // TODO: 16.06.2019
+//        int counterOfSingleWord = 0;
+//         zliczanie słów które wystąpiły tylko raz
+        
+//        for (int i = 0; i < numberOfWords.size(); i++) {
+//            if (numberOfWords.containsValue(numberOfWords.get(i)) == 1) {
+//                counterOfSingleWord++;
+//            }
+//        }
+//
+//        System.out.println("Ilość słów pojedynczych: " + counterOfSingleWord);
+        
     }
 
     static class ValueComparator implements Comparator<String> {
