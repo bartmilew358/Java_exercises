@@ -1,4 +1,4 @@
-package programowanie2.sms;
+package programowanie2.chuck;
 
 import java.io.BufferedReader;
 import java.time.LocalDateTime;

@@ -1,15 +1,12 @@
-package programowanie2;
+package programowanie2.chuck;
 
 import com.google.gson.Gson;
-import programowanie2.sms.Joke;
+import programowanie2.chuck.Joke;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
 
 public class ChuckNorrisJokes {
 
@@ -46,7 +43,7 @@ public class ChuckNorrisJokes {
                 continue;
             }
             array.add(joke.getValue());
-            System.out.println(joke.getValue());
+            System.out.println(joke.value);
         }
     }
 }
