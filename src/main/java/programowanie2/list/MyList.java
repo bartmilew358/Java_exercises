@@ -20,18 +20,40 @@ public class MyList {
     }
 
     public void add_by_index(int index, Object value) throws Exception {
-        if (index < 0 || index == size()) {
+        if (index < 0 || index > size()) {
             throw new Exception("Invalid index (out of bands).");
-
-            if (index == 0) {
-//                add(value);
+        }
+            if ((index == 0) || (index == size())) {
+                add(value);
                 return;
             }
-
-
-
-        }
+            ListElement listElement = new ListElement(value, null);
+            ListElement tempListPrev = head;
+            ListElement tempList = head.getNext();
+            int count = 0;
+            while (count < index) {
+                tempList = tempList.getNext();
+                tempListPrev = tempListPrev.getNext();
+                count++;
+            }
+            tempListPrev.setNext(listElement);
+            listElement.setNext(tempList);
     }
+
+    public void delete(int index) throws Exception {
+        if (index < 0 || index > size()) {
+            throw new Exception("Invalid index (out of bands).");
+        }
+        ListElement tempListPrev = head;
+        ListElement tempList = head.getNext();
+        int count = 1;
+
+        for (int i = 0; i < index; i++) {
+            tempListPrev = tempListPrev.getNext();
+            tempList = tempList.getNext();
+            }
+        tempListPrev.setNext(tempList.getNext());
+        }
 
     public int size() {
         int size = 0;
@@ -53,4 +75,7 @@ public class MyList {
         }
     }
 
+    public boolean isEmppty() {
+        return head == null;
+    }
 }
