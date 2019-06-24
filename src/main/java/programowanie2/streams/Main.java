@@ -60,6 +60,17 @@ public class Main {
 
 //        4*) Obsłuż miejsca "ex aequo"
 //        5) 20 najkrótszych nazwisk, posortowanych według ostatniej litery
+
+        List<String> list5 = DataCollections.getSurnames().stream()
+                .map(nazwisko -> new StringBuilder(nazwisko).reverse().toString())
+                .sorted()
+                .map(nazwisko -> new StringBuilder(nazwisko).reverse().toString())
+                .sorted(Comparator.comparingInt(String::length))
+                .limit(20)
+                .collect(Collectors.toList());
+
+        System.out.println(list5);
+
 //        6) Odwróć kolejność liter we wszystkich nazwiskach i pozstaw jedynie te, które mają literę 'A' wsród pierwszych trzech liter (odwróconego nazwiska)
 
         List<String> list6 = DataCollections.getSurnames().stream()
