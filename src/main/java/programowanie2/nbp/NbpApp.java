@@ -14,19 +14,19 @@ public class NbpApp {
     public static void main(String[] args) throws IOException {
 
         //Zadanie domowe
-        getExchangeAverageRateOfCurrencyAndShowValue("USD", 100);
-        getExchangeAverageRateOfCurrencyAndShowValue("EUR", 100);
-        getExchangeAverageRateOfCurrencyAndShowValue("GBP", 100);
-        getExchangeAverageRateOfCurrencyAndShowValue("CHF", 100);
+        getExchangeAverageRateOfCurrencyAndShowValueOfZloty("USD", 100);
+        getExchangeAverageRateOfCurrencyAndShowValueOfZloty("EUR", 100);
+        getExchangeAverageRateOfCurrencyAndShowValueOfZloty("GBP", 100);
+        getExchangeAverageRateOfCurrencyAndShowValueOfZloty("CHF", 100);
 
         //Zadanie domowe dodatkowe
-        howMuchWeEarnIn30DaysOnCourseOfCurrencyWhenWeInvestValueInPLN("USD", 100);
-        howMuchWeEarnIn30DaysOnCourseOfCurrencyWhenWeInvestValueInPLN("EUR", 100);
-        howMuchWeEarnIn30DaysOnCourseOfCurrencyWhenWeInvestValueInPLN("GBP", 100);
-        howMuchWeEarnIn30DaysOnCourseOfCurrencyWhenWeInvestValueInPLN("CHF", 100);
+        howMuchWeEarnInOneMonthOnCourseOfCurrencyWhenWeInvestValueInPLN("USD", 100);
+        howMuchWeEarnInOneMonthOnCourseOfCurrencyWhenWeInvestValueInPLN("EUR", 100);
+        howMuchWeEarnInOneMonthOnCourseOfCurrencyWhenWeInvestValueInPLN("GBP", 100);
+        howMuchWeEarnInOneMonthOnCourseOfCurrencyWhenWeInvestValueInPLN("CHF", 100);
             }
 
-    public static void getExchangeAverageRateOfCurrencyAndShowValue(String currency, double value) throws IOException {
+    public static void getExchangeAverageRateOfCurrencyAndShowValueOfZloty(String currency, double valuePLN) throws IOException {
 
         StringBuilder sb = getJson(currency, "a", String.valueOf(LocalDate.now()));
         Gson gson = new Gson();
@@ -35,7 +35,7 @@ public class NbpApp {
         System.out.println("Notowania walut z dnia: " + LocalDate.now());
         System.out.println();
         System.out.println(currency + " = " + exchangeAverageRate.getRates()[0].getMid() + " zł ");
-        System.out.println(value + " zł jest warte " + Round(value / exchangeAverageRate.getRates()[0].getMid()) + " " + currency);
+        System.out.println(valuePLN + " zł jest warte " + Round(valuePLN / exchangeAverageRate.getRates()[0].getMid()) + " " + currency);
         System.out.println();
     }
 
@@ -52,17 +52,16 @@ public class NbpApp {
         return exchangeSellAndBuyRate.getRates()[0].getAsk();
     }
 
-    private static void howMuchWeEarnIn30DaysOnCourseOfCurrencyWhenWeInvestValueInPLN(String currency, double value) throws IOException {
+    private static void howMuchWeEarnInOneMonthOnCourseOfCurrencyWhenWeInvestValueInPLN(String currency, double valuePLN) throws IOException {
 
         double differenceBetweenCoursesOfCurrency =
         getCurrencyAskValue(currency, "c", String.valueOf(LocalDate.now().
                 minusDays(valueOfCorrectDateToGetCurrencyValueFrom30DaysAgo())))
                 - getCurrencyAskValue(currency, "c", String.valueOf(LocalDate.now()));
 
-        System.out.println("Przy zakupie miesiąc temu " + currency + " za " + value + " zł, zysk wynosi "
-                + Round(differenceBetweenCoursesOfCurrency * value) + " zł");
+        System.out.println("Przy zakupie miesiąc temu " + currency + " za " + valuePLN + " zł, zysk wynosi "
+                + Round(differenceBetweenCoursesOfCurrency * valuePLN) + " zł");
     }
-
 
     private static StringBuilder getStringBuilder(URL url) throws IOException {
         final URLConnection urlConnection = url.openConnection();
