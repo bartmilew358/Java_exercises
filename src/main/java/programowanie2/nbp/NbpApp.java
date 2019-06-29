@@ -35,7 +35,7 @@ public class NbpApp {
         System.out.println("Notowania walut z dnia: " + LocalDate.now());
         System.out.println();
         System.out.println(currency + " = " + exchangeAverageRate.getRates()[0].getMid() + " zł ");
-        System.out.println(valuePLN + " zł jest warte " + Round(valuePLN / exchangeAverageRate.getRates()[0].getMid()) + " " + currency);
+        System.out.println(valuePLN + " zł jest warte " + round(valuePLN / exchangeAverageRate.getRates()[0].getMid()) + " " + currency);
         System.out.println();
     }
 
@@ -60,7 +60,7 @@ public class NbpApp {
                 - getCurrencyAskValue(currency, "c", String.valueOf(LocalDate.now()));
 
         System.out.println("Przy zakupie miesiąc temu " + currency + " za " + valuePLN + " zł, zysk wynosi "
-                + Round(differenceBetweenCoursesOfCurrency * valuePLN) + " zł");
+                + round(differenceBetweenCoursesOfCurrency * valuePLN) + " zł");
     }
 
     private static StringBuilder getStringBuilder(URL url) throws IOException {
@@ -92,7 +92,7 @@ public class NbpApp {
         return valueOfCorrectDate;
     }
 
-    public static double Round (double value){
+    public static double round (double value){
         value *= 10000;
         value = Math.round(value);
         value /= 10000;
