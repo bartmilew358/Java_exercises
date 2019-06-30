@@ -75,7 +75,7 @@ public class QuizApp {
 
             Collections.shuffle(odpowiedziDoMieszania);
             for (int z = 0; z < odpowiedziDoMieszania.size(); z++){
-                System.out.println((z + 1) + ". " + odpowiedziDoMieszania.get(z));
+                System.out.println("     " + (z + 1) + ". " + odpowiedziDoMieszania.get(z));
             }
 
             Scanner twojaOdpowiedz = new Scanner(System.in);
@@ -87,7 +87,7 @@ public class QuizApp {
             } else {
                 System.out.println("Twoja odpowiedź jest błędna. Poprawna odpowiedź to: " + poprawnaOdpowiedz);
             }
-            System.out.println("-------------------------------------------------------------------");
+            System.out.println("==================================================================================");
         }
 
         System.out.println("Utrzeliłeś " + wynik + " pkt.");
