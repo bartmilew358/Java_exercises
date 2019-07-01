@@ -81,7 +81,7 @@ public class QuizApp {
             Scanner twojaOdpowiedz = new Scanner(System.in);
             Integer twojaodpowiedz_int = twojaOdpowiedz.nextInt();
 
-            if (poprawnaOdpowiedz == odpowiedziDoMieszania.get(twojaodpowiedz_int - 1)){
+            if (poprawnaOdpowiedz.equals(odpowiedziDoMieszania.get(twojaodpowiedz_int - 1))){
                 wynik++;
                 System.out.println("Twoja odpowiedź jest poprawna. Aktualnie masz " + wynik + "pkt.");
             } else {
@@ -90,7 +90,7 @@ public class QuizApp {
             System.out.println("==================================================================================");
         }
 
-        System.out.println("Utrzeliłeś " + wynik + " pkt.");
+        System.out.println("Utrzeliłeś " + wynik + " / 10 pkt.");
 //        System.out.println(zadaniaQuizowe.toString());
     }
 }
