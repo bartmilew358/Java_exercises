@@ -1,4 +1,4 @@
-package programowanie2.list;
+package zadaniaZCv.list;
 
 public class ListElement {
     private Object value;

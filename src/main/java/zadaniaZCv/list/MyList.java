@@ -1,4 +1,4 @@
-package programowanie2.list;
+package zadaniaZCv.list;
 
 public class MyList {
 

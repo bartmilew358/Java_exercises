@@ -1,4 +1,4 @@
-package programowanie2.sms;
+package zadaniaZCv.sms;
 
 public class Sms {
 

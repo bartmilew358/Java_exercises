@@ -1,4 +1,4 @@
-package programowanie2.chuck;
+package zadaniaZCv.chuck;
 
 import java.io.BufferedReader;
 import java.time.LocalDateTime;

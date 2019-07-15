@@ -1,4 +1,4 @@
-package programowanie2.detectLanguage;
+package zadaniaZCv.detectLanguage;
 
 import com.detectlanguage.DetectLanguage;
 import com.detectlanguage.Result;

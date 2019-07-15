@@ -1,7 +1,6 @@
-package programowanie2.chuck;
+package zadaniaZCv.chuck;
 
 import com.google.gson.Gson;
-import programowanie2.chuck.Joke;
 
 import java.io.*;
 import java.net.URL;

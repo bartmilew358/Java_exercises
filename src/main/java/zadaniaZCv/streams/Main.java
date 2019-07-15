@@ -1,13 +1,9 @@
-package programowanie2.streams;
-
-import programowanie2.streams.DataCollections;
+package zadaniaZCv.streams;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {

@@ -1,4 +1,4 @@
-package programowanie2.quiz;
+package zadaniaZCv.quiz;
 
 import java.util.ArrayList;
 

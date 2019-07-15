@@ -1,4 +1,4 @@
-package programowanie2.nbp;
+package zadaniaZCv.nbp;
 
 public class ExchangeSellAndBuyRate {
 

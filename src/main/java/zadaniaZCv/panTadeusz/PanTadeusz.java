@@ -1,4 +1,4 @@
-package programowanie2.panTadeusz;
+package zadaniaZCv.panTadeusz;
 
 import java.io.File;
 import java.io.FileNotFoundException;

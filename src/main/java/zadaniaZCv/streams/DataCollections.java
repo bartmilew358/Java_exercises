@@ -1,4 +1,4 @@
-package programowanie2.streams;
+package zadaniaZCv.streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;

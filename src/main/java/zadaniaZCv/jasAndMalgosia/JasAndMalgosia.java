@@ -1,4 +1,4 @@
-package programowanie2.jasAndMalgosia;
+package zadaniaZCv.jasAndMalgosia;
 
 import java.util.concurrent.CountDownLatch;
 
