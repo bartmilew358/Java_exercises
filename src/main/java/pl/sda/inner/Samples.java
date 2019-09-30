@@ -1,4 +1,4 @@
-package pl.sda.inner;
+/* package pl.sda.inner;
 
 import com.google.common.collect.Lists;
 
@@ -95,3 +95,4 @@ public class Samples {
         return o1.getName().compareTo(o2.getName());
     }
 }
+*/
